@@ -1,6 +1,10 @@
-<section class="row">
-  <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-6 col-sm-6 col-xs-12 my-2">
+<section class="row d-flex justify-content-center align-items-start">
+  <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-6 col-sm-6 col-xs-12">
+    <h1>Add new Game</h1>
+  </div>
+  <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-5 col-sm-5 col-xs-12 my-2">
     <form action="">
+      <div class="form-style">
       <!-- <div class="row mb-4">
         <div class="col">
           <div class="form-outline">
@@ -30,6 +34,12 @@
     
       <!-- Text input -->
       <div class="form-outline mb-4">
+        <input type="text" id="form6Example3" name="genres" [(ngModel)]="game.genres" class="form-control" />
+        <label class="form-label" for="form6Example3">Game Genres</label>
+      </div>
+    
+      <!-- Text input -->
+      <div class="form-outline mb-4">
         <input type="text" id="form6Example4" name="image URL" [(ngModel)]="game.image" class="form-control" />
         <label class="form-label" for="form6Example4">Game Image</label>
       </div>
@@ -41,14 +51,17 @@
       </div>
     
       <!-- Submit button -->
-        <button class="btn btn-primary btn-block mb-4" (click)="edit ? updateGame() : saveNewGame()">
+        <button class="btn btn-primary btn-block" (click)="edit ? updateGame() : saveNewGame()">
           Save
         </button>
+
+      </div>
+
     </form>
   </div>
 
 
-  <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-12 my-2">
+  <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-7 col-sm-7 col-xs-12 my-2">
       <div class="card card-body text-center">
       <img [src]="game.image == '' ? '/assets/noimage.png' : game.image" alt="No Image" class="card-img-top">
         <h3>{{game.id}}. {{game.title == '' ? 'Game Title' : game.title}}</h3>
