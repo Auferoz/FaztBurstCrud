@@ -1,0 +1,60 @@
+<section class="row">
+  <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-6 col-sm-6 col-xs-12 my-2">
+    <form action="">
+      <!-- <div class="row mb-4">
+        <div class="col">
+          <div class="form-outline">
+            <input type="text" id="form6Example1" name="title" [(ngModel)]="game.title" autofocus class="form-control" />
+            <label class="form-label" for="form6Example1">Title</label>
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-outline">
+            <input type="text" id="form6Example2" class="form-control" />
+            <label class="form-label" for="form6Example2">Last name</label>
+          </div>
+        </div>
+      </div> -->
+    
+      <!-- Text input -->
+      <div class="form-outline mb-4">
+        <input type="text" id="form6Example3" name="title" [(ngModel)]="game.title" class="form-control" />
+        <label class="form-label" for="form6Example3">Game Title</label>
+      </div>
+    
+      <!-- Text input -->
+      <div class="form-outline mb-4">
+        <input type="text" id="form6Example3" name="released" [(ngModel)]="game.released" class="form-control" />
+        <label class="form-label" for="form6Example3">Game Released</label>
+      </div>
+    
+      <!-- Text input -->
+      <div class="form-outline mb-4">
+        <input type="text" id="form6Example4" name="image URL" [(ngModel)]="game.image" class="form-control" />
+        <label class="form-label" for="form6Example4">Game Image</label>
+      </div>
+    
+      <!-- Message input -->
+      <div class="form-outline mb-4">
+        <textarea class="form-control" id="form6Example7" name="description" [(ngModel)]="game.description" rows="4"></textarea>
+        <label class="form-label" for="form6Example7">Game Descriptionn</label>
+      </div>
+    
+      <!-- Submit button -->
+        <button class="btn btn-primary btn-block mb-4" (click)="edit ? updateGame() : saveNewGame()">
+          Save
+        </button>
+    </form>
+  </div>
+
+
+  <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-12 my-2">
+      <div class="card card-body text-center">
+      <img [src]="game.image == '' ? '/assets/noimage.png' : game.image" alt="No Image" class="card-img-top">
+        <h3>{{game.id}}. {{game.title == '' ? 'Game Title' : game.title}}</h3>
+        <p>{{game.description == '' ? 'Write your Descrition' : game.description}}</p>
+        <h3>{{game.id}}. {{game.released == '' ? 'Game released' : game.released}}</h3>
+        <p>{{game.created_at | date: 'yyyy-MM-dd'}}</p>
+      </div>
+  </div>
+</section>

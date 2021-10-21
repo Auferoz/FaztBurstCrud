@@ -1,0 +1,83 @@
+<section id="navbar">
+    <!-- Navbar -->
+	<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+		<!-- Container wrapper -->
+		<div class="container-fluid">
+  
+		  <!-- Navbar brand -->
+			<a class="navbar-brand mt-2 mt-lg-0" routerLink="/">
+				<img src="assets/img/BGTLOGO.png" height="15" alt="" loading="lazy" />
+			</a>
+  
+		  <!-- Toggle button -->
+		  <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+			data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+			aria-label="Toggle navigation">
+			<i class="fas fa-bars"></i>
+		  </button>
+  
+		  <!-- Collapsible wrapper -->
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav m-auto mb-2 mb-lg-0">
+  
+			  <!-- Link -->
+			  <li class="nav-item">
+				<a class="nav-link" routerLink="/games" routerLinkActive="active">Link 1</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">Link 2</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">Link 3</a>
+			  </li>
+  
+			</ul>
+  
+			<!-- Icons -->
+			<ul class="navbar-nav d-flex flex-row me-1">
+  
+			  <!-- Dropdown -->
+			  <li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown"
+				  aria-expanded="false">
+				  <i class="fas fa-user-tie"></i> Usuario
+				</a>
+				<!-- Dropdown menu -->
+				<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+				  <li>
+					<a class="dropdown-item" routerLink="/games/add" routerLinkActive="active"><i class="fas fa-plus-circle"></i> Add Link 1</a>
+				  </li>
+				  <li>
+					<a class="dropdown-item" href="#"><i class="fas fa-plus-circle"></i> Add Link 2</a>
+				  </li>
+				  <li>
+					<a class="dropdown-item" href="#"><i class="fas fa-plus-circle"></i> Add Link 3</a>
+				  </li>
+				  <li>
+					<hr class="dropdown-divider" />
+				  </li>
+				  <li>
+					<a class="dropdown-item" href="#"><i class="fas fa-user-cog"></i> Settings</a>
+				  </li>
+				</ul>
+			  </li>
+			  <li class="nav-item me-3 me-lg-0" data-mdb-toggle="tooltip" data-mdb-placement="bottom" title="Link 1">
+				<a class="nav-link" href="#"><i class="fab fa-facebook-square"></i></a>
+			  </li>
+			  <li class="nav-item me-3 me-lg-0" data-mdb-toggle="tooltip" data-mdb-placement="bottom" title="Link 2">
+				<a class="nav-link" href="#"><i class="fab fa-twitter-square"></i></a>
+			  </li>
+			  <li class="nav-item me-3 me-lg-0" data-mdb-toggle="tooltip" data-mdb-placement="bottom" title="Link 3">
+				<a class="nav-link" href="#"><i class="fab fa-instagram-square"></i></a>
+			  </li>
+			  <li class="nav-item me-3 me-lg-0" data-mdb-toggle="tooltip" data-mdb-placement="bottom" title="Link 4">
+				<a class="nav-link" href="#"><i class="fas fa-share-alt-square"></i></a>
+			  </li>
+			</ul>
+  
+		  </div>
+		</div>
+		<!-- Container wrapper -->
+	  </nav>
+	  <!-- Navbar -->
+</section>

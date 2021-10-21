@@ -1,0 +1,21 @@
+<div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12 my-2" *ngFor="let game of games">
+  <div class="card text-white poster-img" data-mdb-toggle="modal" data-mdb-target="#ModalCard01">
+    <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+      <img [src]="game.image" class="img-fluid" />
+      <a href="#!">
+        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+      </a>
+    </div>
+  
+    <div class="card-body" id="card">
+      <h5 class="card-title">{{game.title}}</h5>
+      <p class="card-text">{{game.description}}</p>
+      <a [routerLink]="['/games/edit', game.id]" class="btn btn-info btn-sm">
+        <i class="far fa-edit"></i>
+      </a>
+      <a class="btn btn-danger btn-sm ms-1" (click)="deleteGame(game.id)">
+        <i class="far fa-trash-alt"></i>
+      </a>
+    </div>
+  </div>
+</div>

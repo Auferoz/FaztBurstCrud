@@ -1,0 +1,16 @@
+/* Navbar */
+.navbar {
+    border-bottom-left-radius: 1.25rem;
+    border-bottom-right-radius: 1.25rem;
+}
+
+.Banner > .carousel-item > img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
+    border-bottom-left-radius: 1.25rem;
+    border-bottom-right-radius: 1.25rem;
+}
