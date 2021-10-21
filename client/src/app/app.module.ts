@@ -11,13 +11,17 @@ import { GamesListComponent } from './components/games-list/games-list.component
 // Services
 import { GamesService } from './services/games.service';
 import { GameFormComponent } from './components/game-form/game-form.component';
+import { SeriesListComponent } from './components/series-list/series-list.component';
+import { MoviesListComponent } from './components/movies-list/movies-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
     GamesListComponent,
-    GameFormComponent
+    GameFormComponent,
+    SeriesListComponent,
+    MoviesListComponent
   ],
   imports: [
     BrowserModule,
