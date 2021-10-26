@@ -1,3 +1,29 @@
-<p>
-  series-list works!
-</p>
+<div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12 my-2">
+  <input type="text" #textId>
+  <button (click)="getSerie(textId.value)">Get Serie</button>
+
+  <hr>
+
+  <ng-container *ngIf="notFound">
+    User not found
+  </ng-container>
+
+  <ng-container *ngIf="serie">
+    <div class="card text-white poster-img" data-mdb-toggle="modal" data-mdb-target="#ModalCard01">
+      <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+        <img src="https://image.tmdb.org/t/p/w500/{{serie.poster_path}}" class="img-fluid" />
+        <a href="">
+          <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+        </a>
+      </div>
+    
+      <div class="card-body" id="card">
+        <p><b>Id:</b> {{serie.id}}</p>
+        <p><b>Name:</b> {{serie.name}}</p>
+        <p><b>Total Episodes:</b> {{serie.number_of_episodes}}</p>
+        <p><b>Total Seasons:</b> {{serie.number_of_seasons}}</p>
+        <p><b>Overview:</b> {{serie.overview}}</p>
+      </div>
+    </div>
+  </ng-container>
+</div>

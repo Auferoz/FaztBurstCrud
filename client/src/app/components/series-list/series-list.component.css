@@ -1,0 +1,98 @@
+.card {
+    background-color:#f5f6fa;
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
+    border-bottom-left-radius: 1.25rem;
+    border-bottom-right-radius: 1.25rem;
+
+    -webkit-transition: margin-top 1s, background 1s;
+    -moz-transition: margin-top 1s, background 1s;
+    -o-transition: margin-top 1s, background 1s;
+    transition: margin-top 1s, background 1s;
+}
+
+.card .card-body {
+    margin-top: -240px;
+    background-color:#f5f6fa;
+
+    -webkit-transition: margin-top 1s, background 1s;
+    -moz-transition: margin-top 1s, background 1s;
+    -o-transition: margin-top 1s, background 1s;
+    transition: margin-top 1s, background 1s;
+}
+
+.card:hover .card-body {
+    margin-top: -17px;
+    background-color:#4f4f4f;
+    border-bottom-left-radius: 1.25rem;
+    border-bottom-right-radius: 1.25rem;
+    -webkit-box-shadow: 0 10px 15px -3px rgb(0 0 0 / 7%), 0 4px 6px -2px rgb(0 0 0 / 5%);
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 7%), 0 4px 6px -2px rgb(0 0 0 / 5%);
+}
+
+#card {
+    -webkit-transition-timing-function: ease;
+    -moz-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+    transition-timing-function: ease;
+}
+
+.card .bg-image {
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
+    border-bottom-left-radius: 1.25rem;
+    border-bottom-right-radius: 1.25rem;
+}
+
+.card-body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.5rem 1rem 1rem 1rem !important;
+    
+    border-bottom-left-radius: 1.25rem;
+    border-bottom-right-radius: 1.25rem;
+}
+
+.card-title{
+    margin: 0px !important;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.card-text{
+    margin: 0px !important;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.bg-image > img {
+    object-fit: cover;
+}
+
+.card-body > p {
+    margin: 0;
+    padding: 0;
+}
+
+/* .card-body {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    padding: 0px !important;
+    text-align: center;
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
+    border-bottom-left-radius: 1.25rem;
+    border-bottom-right-radius: 1.25rem;
+  }
+  
+  .poster-img:hover .card-body {
+    opacity: 1;
+  } */
