@@ -13,6 +13,8 @@ import { GamesService } from './services/games.service';
 import { GameFormComponent } from './components/game-form/game-form.component';
 import { SeriesListComponent } from './components/series-list/series-list.component';
 import { MoviesListComponent } from './components/movies-list/movies-list.component';
+import { SeriesFormComponent } from './components/series-form/series-form.component';
+import { MoviesFormComponent } from './components/movies-form/movies-form.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { MoviesListComponent } from './components/movies-list/movies-list.compon
     GamesListComponent,
     GameFormComponent,
     SeriesListComponent,
-    MoviesListComponent
+    MoviesListComponent,
+    SeriesFormComponent,
+    MoviesFormComponent
   ],
   imports: [
     BrowserModule,

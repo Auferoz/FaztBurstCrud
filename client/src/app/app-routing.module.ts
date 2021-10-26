@@ -4,7 +4,9 @@ import { Routes, RouterModule } from '@angular/router';
 import { GamesListComponent } from './components/games-list/games-list.component';
 import { GameFormComponent } from './components/game-form/game-form.component';
 import { MoviesListComponent } from './components/movies-list/movies-list.component';
+import { MoviesFormComponent } from './components/movies-form/movies-form.component';
 import { SeriesListComponent } from './components/series-list/series-list.component';
+import { SeriesFormComponent } from './components/series-form/series-form.component';
 
 const routes: Routes = [
   {
@@ -36,11 +38,11 @@ const routes: Routes = [
   },
   {
     path: 'series/add',
-    component: SeriesListComponent
+    component: SeriesFormComponent
   },
   {
     path: 'series/edit/:id',
-    component: SeriesListComponent
+    component: SeriesFormComponent
   },
   
   {
@@ -54,29 +56,11 @@ const routes: Routes = [
   },
   {
     path: 'movies/add',
-    component: MoviesListComponent
+    component: MoviesFormComponent
   },
   {
     path: 'movies/edit/:id',
-    component: MoviesListComponent
-  },
-  
-  {
-    path: '',
-    redirectTo: '/series',
-    pathMatch: 'full'
-  },
-  {
-    path: 'series',
-    component: SeriesListComponent
-  },
-  {
-    path: 'series/add',
-    component: SeriesListComponent
-  },
-  {
-    path: 'series/edit/:id',
-    component: SeriesListComponent
+    component: MoviesFormComponent
   }
 ];
 

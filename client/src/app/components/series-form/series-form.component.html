@@ -1,0 +1,42 @@
+<div class="row">
+  <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12 my-2">
+    <input type="text" #textId>
+    <button (click)="getSerie(textId.value)">Get Serie</button>
+  
+    <hr>
+  
+    <ng-container *ngIf="notFound">
+      User not found
+    </ng-container>
+  
+    <ng-container *ngIf="serie">
+      <div class="card text-white poster-img" data-mdb-toggle="modal" data-mdb-target="#ModalCard01">
+        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+          <img src="https://image.tmdb.org/t/p/w500/{{serie.poster_path}}" class="img-fluid" />
+          <a>
+            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+          </a>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+  
+  
+  <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-5 col-sm-5 col-xs-12 my-2">
+    <form action="">
+      <div class="form-style">
+  
+      <div class="form-outline mb-4">
+        <label class="form-label">Serie Title</label>
+        <input type="text" name="name" [(ngModel)]="serie.name" class="form-control" disabled/>
+      </div>
+      <div class="form-outline mb-4">
+        <label class="form-label">Serie Released</label>
+        <input type="text" name="first_air_date" [(ngModel)]="serie.first_air_date" class="form-control" disabled/>
+      </div>
+  
+      </div>
+  
+    </form>
+  </div>
+</div>
